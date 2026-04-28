@@ -1,10 +1,14 @@
 import WaveOverlay from './WaveOverlay';
 import HeroText from './HeroText';
 import SmallLoader from './SmallLoader';
+import Navbar from './Navbar';
 
 export default function PrelaunchPage() {
   return (
     <div className="animate-page-in relative w-full h-screen bg-black overflow-hidden">
+
+      {/* z-40 — navbar, always on top */}
+      <Navbar />
 
       {/* z-10 — fullscreen wave, the main cinematic layer */}
       <WaveOverlay />
