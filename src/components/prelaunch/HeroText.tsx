@@ -1,32 +1,32 @@
 export default function HeroText() {
   return (
-    <div className="text-center px-6">
+    <div className="animate-fade-up-1 text-center px-6 space-y-1">
+
+      {/* Line 1: Assam (white) + Freelance (yellow) */}
       <h1
-        className={[
-          'animate-fade-up-1',
-          'font-display font-black',
-          'text-[clamp(2.8rem,7vw,6rem)]',
-          'text-white leading-none tracking-tight',
-          'mb-4',
-        ].join(' ')}
+        className="font-poppins font-extrabold leading-tight"
+        style={{ fontSize: 'clamp(1.6rem, 3.8vw, 3rem)' }}
       >
-        Accelerate
+        <span className="text-white">Assam </span>
+        <span style={{ color: '#FFD700' }}>Freelance</span>
       </h1>
 
+      {/* Line 2: Marketplace — bold italic */}
       <p
-        className={[
-          'animate-fade-up-2',
-          'text-[clamp(0.95rem,2vw,1.35rem)]',
-          'text-white/60 font-light tracking-wide',
-          'leading-snug',
-        ].join(' ')}
+        className="font-poppins font-bold italic text-white leading-tight"
+        style={{ fontSize: 'clamp(1.6rem, 3.8vw, 3rem)' }}
       >
-        your work, and earn more
-        <br />
-        <span className="text-yellow-400 font-medium italic">
-          &mdash;independently
-        </span>
+        Marketplace
       </p>
+
+      {/* Line 3: Tagline — light, off-white */}
+      <p
+        className="animate-fade-up-2 font-poppins font-light text-white/60 tracking-wide pt-2"
+        style={{ fontSize: 'clamp(0.9rem, 1.8vw, 1.2rem)' }}
+      >
+        Work independently to earn more
+      </p>
+
     </div>
   );
 }
